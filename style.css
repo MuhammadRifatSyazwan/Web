@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
- *{ 
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
   display: contents;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: #ecf0f3;
 }
+
 .wrapper,
 .wrapper .img-area,
 .social-icons a,
-.buttons button{
+.buttons button {
   background: #ecf0f3;
   box-shadow: -3px -3px 7px #ffffff,
-               3px 3px 5px #ceced1;
+    3px 3px 5px #ceced1;
 }
-.wrapper{
+
+.wrapper {
   position: relative;
   width: 350px;
   padding: 30px;
@@ -30,7 +34,8 @@ body{
   justify-content: center;
   flex-direction: column;
 }
-.wrapper .icon{
+
+.wrapper .icon {
   font-size: 17px;
   color: #31344b;
   position: absolute;
@@ -44,17 +49,21 @@ body{
   border-radius: 50%;
   font-size: 16px;
 }
-.wrapper .icon i{
+
+.wrapper .icon i {
   position: relative;
   z-index: 9;
 }
-.wrapper .icon.arrow{
+
+.wrapper .icon.arrow {
   left: 15px;
 }
-.wrapper .icon.dots{
+
+.wrapper .icon.dots {
   right: 15px;
 }
-.wrapper .img-area{
+
+.wrapper .img-area {
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -62,32 +71,38 @@ body{
   align-items: center;
   justify-content: center;
 }
-.img-area .inner-area{
+
+.img-area .inner-area {
   height: calc(100% - 25px);
   width: calc(100% - 25px);
   border-radius: 50%;
 }
-.inner-area img{
+
+.inner-area img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
-.wrapper .name{
+
+.wrapper .name {
   font-size: 23px;
   font-weight: 500;
   color: #31344b;
   margin: 10px 0 5px 0;
 }
-.wrapper .about{
+
+.wrapper .about {
   color: #44476a;
   font-weight: 400;
   font-size: 16px;
 }
-.wrapper .social-icons{
+
+.wrapper .social-icons {
   margin: 15px 0 25px 0;
 }
-.social-icons a{
+
+.social-icons a {
   position: relative;
   height: 40px;
   width: 40px;
@@ -96,9 +111,10 @@ body{
   text-decoration: none;
   border-radius: 50%;
 }
+
 .social-icons a:hover::before,
 .wrapper .icon:hover::before,
-.buttons button:hover:before{
+.buttons button:hover:before {
   content: "";
   position: absolute;
   top: 0;
@@ -108,13 +124,15 @@ body{
   border-radius: 50%;
   background: #ecf0f3;
   box-shadow: inset -3px -3px 7px #ffffff,
-              inset 3px 3px 5px #ceced1;
+    inset 3px 3px 5px #ceced1;
 }
-.buttons button:hover:before{
+
+.buttons button:hover:before {
   z-index: -1;
   border-radius: 5px;
 }
-.social-icons a i{
+
+.social-icons a i {
   position: relative;
   z-index: 3;
   text-align: center;
@@ -122,24 +140,30 @@ body{
   height: 100%;
   line-height: 40px;
 }
-.social-icons a.fb i{
+
+.social-icons a.fb i {
   color: #4267B2;
 }
-.social-icons a.twitter i{
+
+.social-icons a.twitter i {
   color: #1DA1F2;
 }
-.social-icons a.insta i{
+
+.social-icons a.insta i {
   color: #E1306C;
 }
-.social-icons a.yt i{
+
+.social-icons a.yt i {
   color: #ff0000;
 }
-.wrapper .buttons{
+
+.wrapper .buttons {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.buttons button{
+
+.buttons button {
   position: relative;
   width: 100%;
   border: none;
@@ -152,26 +176,31 @@ body{
   cursor: pointer;
   z-index: 4;
 }
-.buttons button:first-child{
+
+.buttons button:first-child {
   margin-right: 10px;
 }
-.buttons button:last-child{
+
+.buttons button:last-child {
   margin-left: 10px;
 }
-.wrapper .social-share{
+
+.wrapper .social-share {
   display: flex;
   width: 100%;
   margin-top: 30px;
   padding: 0 5px;
   justify-content: space-between;
 }
-.social-share .row{
+
+.social-share .row {
   color: #31344b;
   font-size: 17px;
   cursor: pointer;
   position: relative;
 }
-.social-share .row::before{
+
+.social-share .row::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -179,10 +208,12 @@ body{
   background: #e0e6eb;
   margin-left: -25px;
 }
-.row:first-child::before{
+
+.row:first-child::before {
   background: none;
 }
-.social-share .row i.icon-2{
+
+.social-share .row i.icon-2 {
   position: absolute;
   left: 0;
   top: 50%;
@@ -192,8 +223,9 @@ body{
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
 .row:nth-child(1):hover i.fa-heart,
-.row:nth-child(2):hover i.fa-comment{
+.row:nth-child(2):hover i.fa-comment {
   opacity: 1;
   pointer-events: auto;
 }
